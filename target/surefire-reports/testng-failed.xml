@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="vinayakshettypractice.TestComponents.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Error Validation Test(failed)">
+    <classes>
+      <class name="vinayakshettypractice.tests.ErrorValidationsTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="ProductErrorValidation"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- vinayakshettypractice.tests.ErrorValidationsTest -->
+      <class name="vinayakshettypractice.tests.SubmitOrderTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- vinayakshettypractice.tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
